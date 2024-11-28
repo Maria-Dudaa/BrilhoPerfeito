@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrilhoPerfeito</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="stylesheet" href="reviwes.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" name="search" placeholder="Procurar aqui" id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-shopping-cart" id="cart-icon"></a>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+    </header>
+
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="Produtos">Produtos</a>
+            <a href="Reviews">Reviews</a>
+            <a href="contato">Contato</a>
+        </nav>
+    </div>
+
+    <nav class="bottom-navbar">
+        <a href="#featured" class="fas fa-list"></a>
+        <a href="#reviews" class="fas fa-comments"></a>
+        <a href="#contato" class="fas fa-phone"></a>
+    </nav>
+
+<!-- Formulário de cadastro -->
+<div class="login-form-container">
+    <div id="close-login-btn" class="fas fa-times close-login-btn"></div>
+    <form action="">
+        <h3>Crie sua conta</h3>
+        <span>Email</span>
+        <input type="email" class="box" placeholder="Entre com seu email" id="email" onchange="onChangeEmail()">
+        <div class="error" id="email-required-error"></div>
+        <div class="error" id="email-invalid-error"></div>
+        <span>Senha</span>
+        <input type="password" class="box" placeholder="Entre com sua senha" id="password" onchange="onChangePassword()">
+        <button type="button" class="btn" id="signup-button" disabled onclick="signUp()">Cadastrar</button>
+    </form>
+</div>
+
+    <section class="home" id="home">
+        <div class="banner">
+            <div class="banner-content">
+                <h3 class="discount-text">75% de desconto!</h3>
+                <p>
+                    Aproveite o conjunto de joias rosa em promoção! Composto por colar, brincos e anel, combina elegância e sofisticação com tons vibrantes e acabamentos delicados. Feito com materiais de alta qualidade, é perfeito para qualquer ocasião. Um brilho único por um preço especial!</p>
+                <button class="add-to-cart" data-id="6" data-name="Conjunto de Joias" data-price="350.90">Comprar</button>
+            </div>
+            <img src="img/imagem4.png" class="banner-image" alt="Imagem do Banner">
+        </div>
+    </section>
+
+
+
+    <!-- Seção Featured -->
+    <div class="container">
+        <!-- Produto 1 -->
+        <div class="produto">
+            <img src="img/imagem7.avif" alt="Produto 1"> <a href=""></a>
+            <h3>Conjunto De Joias</h3>
+            <p>Este conjunto de joias com pulseira é a escolha perfeita para quem busca elegância e sofisticação. Composto por colar, brincos e uma linda pulseira, o conjunto possui um design moderno e refinado, ideal para diversas ocasiões.</p>
+            <button class="add-to-cart" data-id="1" data-name="Conjunto De Joias" data-price="599.99">Comprar</button>
+        </div>
+        <!-- Produto 2 -->
+        <div class="produto">
+            <img src="img/imagem3.jpg" alt="Produto 2"> <a href=""></a>
+            <h3>Colar de Ouro</h3>
+            <p>Este colar de coroa é uma peça encantadora e cheia de elegância. Com um design sofisticado, a coroa delicadamente detalhada traz um toque de realeza ao seu visual. Feito com materiais de alta qualidade, o colar combina brilho e durabilidade.</p>
+            <button class="add-to-cart" data-id="2" data-name="Colar de Ouro" data-price="150.00">Comprar</button>
+        </div>
+        <!-- Produto 3 -->
+        <div class="produto">
+            <img src="img/imagem9.avif" alt="Produto 3"> <a href=""></a>
+            <h3>Colar de Ouro com Diamante</h3>
+            <p>Este colar de ouro com diamante é uma peça sofisticada e atemporal. A pedra central, com seu brilho intenso e aparência de diamante, é rodeada por um design refinado que valoriza ainda mais sua beleza.</p>
+            <button class="add-to-cart" data-id="3" data-name="Colar de Ouro com Diamante" data-price="599.99">Comprar</button>
+        </div>
+        <!-- Produto 4 -->
+        <div class="produto">
+            <img src="img/imagem8.jpg" alt="Produto 4"> 
+            <h3>Anel com Esmeralda</h3>
+            <p>Este anel de esmeralda é uma peça deslumbrante e cheia de sofisticação. A esmeralda, com seu verde intenso e vibrante, é a estrela central, rodeada por detalhes delicados que realçam ainda mais sua beleza. Feito com materiais de alta qualidade, o anel oferece um acabamento refinado e durabilidade, sendo a escolha perfeita para quem busca um acessório elegante e atemporal.</p>
+            <button class="add-to-cart" data-id="5" data-name="Anel com Esmeralda" data-price="199.90">Comprar</button>
+        </div>
+    </div>
+            <!-- Adicionar mais produtos aqui -->
+        </div>
+    </section>
+
+    <!-- Seção Reviews -->
+    <section id="reviews" class="section">
+        <h2>O que nossos clientes dizem</h2>
+        <div class="reviews-container">
+            <!-- Review 1 -->
+            <div class="review">
+                <div class="customer-image">
+                    <img src="img/cliente1.avif" alt="João Silva">
+                </div>
+                <div class="review-text">
+                    <p class="quote">"Excelente produto! Muito satisfeito."</p>
+                    <p class="customer-name">- João Silva</p>
+                </div>
+            </div>
+            <!-- Review 2 -->
+            <div class="review">
+                <div class="customer-image">
+                    <img src="img/cliente2.avif" alt="Maria Oliveira">
+                </div>
+                <div class="review-text">
+                    <p class="quote">"O atendimento foi muito bom e o envio rápido."</p>
+                    <p class="customer-name">- Maria Oliveira</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="form">
+        <h2>Fale conosco</h2>
+        <form action="#">
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu e-mail" required>
+            <textarea placeholder="Sua mensagem" required></textarea>
+            <input type="submit" value="Enviar" class="btn">
+        </form>
+    </section>
+    
+   <!-- Seção do Carrinho -->
+    
+   <!--<section id="cart" class="hidden">
+    <h2>Seu Carrinho</h2>
+    <div id="cart-items">
+        <p>O carrinho está vazio.</p>
+    </div>
+    <div id="cart-total"></div>
+    <button id="buy-cart" class="buy-cart">Comprar</button> 
+    <button id="close-cart" class="btn">Fechar</button>
+    </section> -->
+
+    <div id="cart">
+        <div id="cart-items"></div>
+        <div id="cart-total"></div>
+        <button id="buy-cart" style="display:none;">Finalizar Compra</button>
+        <button id="close-cart">Fechar Carrinho</button>
+    </div>
+    
+
+    <!-- infelizmente o navegador não suporta-->
+    <script type="module" src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js"></script>
+    <script type="module" src="banco.js"></script>
+    
+
+
+    <script src="cart.js"></script>
+      
+    <script src="script.js"></script>
+</body>
+</html>

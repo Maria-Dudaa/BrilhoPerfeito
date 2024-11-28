@@ -1,0 +1,98 @@
+
+/*css produtos*/
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Configurações da seção  */
+section {
+    text-align: center;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.produto {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 23%; /* 4 produtos na horizontal */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.produto:hover img {
+    transform: scale(1.1);
+}
+
+.produto h3 {
+    margin: 10px 0;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.produto p {
+    color: #555;
+    font-size: 1.4rem;
+}
+
+.produto button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.produto button:hover {
+    background-color: #37325e;
+}
+
+/* --- Responsividade --- */
+/* Para tablets */
+@media (max-width: 768px) {
+    .produto {
+        width: 45%; /* Dois produtos por linha */
+    }
+}
+
+/* Para smartphones */
+@media (max-width: 480px) {
+    .produto {
+        width: 90%; /* Um produto por linha */
+    }
+
+    h2 {
+        font-size: 2rem; /* Ajuste do título */
+    }
+
+    .container {
+        gap: 10px; /* Reduz o espaçamento entre produtos */
+    }
+}

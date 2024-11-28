@@ -1,0 +1,91 @@
+#contato {
+    padding: 5rem 10%;
+    background: url(banner.jpg);
+    border-radius: 1rem 0px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contato input, #contato textarea {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.form h2{
+    align-items: center;
+    color: #080808;
+    font-size: 2.5rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    border-radius: 5rem;
+    color: #fff;
+    background: #040c36;
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: #37325e;
+}
+
+
+
+
+
+/*#contato {
+    padding: 15rem 30%;
+    background-color: #f9f9f9; /* Cor de fundo do contêiner 
+    border-radius: 10px; /* Bordas arredondadas do contêiner 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque 
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #4e46bb; /* Cor de fundo do formulário 
+    border-radius: 8px; /* Bordas arredondadas do formulário 
+    padding: 2rem; /* Espaçamento interno do formulário 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para o formulário 
+}
+
+#contato input, #contato textarea {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.form h2 {
+    align-items: center;
+    color: #080808;
+    font-size: 2.5rem;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    border-radius: 5rem;
+    color: #fff;
+    background: #040c36;
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: #040c36;
+}*/
